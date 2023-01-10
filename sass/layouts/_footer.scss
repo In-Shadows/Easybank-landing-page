@@ -1,0 +1,116 @@
+.footer {
+  background-color: var(--color-dark-blue);
+  padding: 5rem 16rem;
+
+  display: flex;
+  gap: 4rem;
+
+  @media only screen and (max-width: $bp-large) {
+    padding: 5rem 10rem;
+  }
+
+  @media only screen and(max-width:$bp-medium) {
+    padding: 5rem 3rem;
+  }
+
+  @media only screen and(max-width: $bp-small) {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .social {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-right: 12rem;
+
+    @media only screen and (max-width: $bp-medium) {
+      margin-right: 5rem;
+    }
+
+    @media only screen and(max-width: $bp-small) {
+      gap: 3rem;
+      margin-right: 0;
+    }
+
+    & > img {
+      filter: invert(0.3) brightness(180%);
+    }
+
+    &__links {
+      display: flex;
+      gap: 1.2rem;
+
+      a img:hover,
+      a img:active {
+        filter: invert(31%) sepia(163%) saturate(4959%) hue-rotate(489deg)
+          brightness(132%) contrast(188%);
+      }
+    }
+  }
+
+  &__navigation {
+    flex: 0 1 30%;
+    margin-right: auto;
+
+    @media only screen and(max-width: $bp-small) {
+      margin: 0;
+    }
+  }
+
+  &__navigation__list {
+    list-style: none;
+
+    display: flex;
+    flex-wrap: wrap;
+
+    @media only screen and(max-width: $bp-small) {
+      flex-wrap: nowrap;
+      flex-direction: column;
+      gap: 1rem;
+      align-items: center;
+    }
+
+    &-item {
+      flex: 0 0 50%;
+      margin-bottom: 0.5rem;
+
+      @media only screen and(max-width: $bp-small) {
+        margin-bottom: 0;
+      }
+
+      &:nth-child(3),
+      &:nth-child(6) {
+        margin-bottom: 0;
+      }
+    }
+  }
+
+  &__link:link,
+  &__link:visited {
+    color: var(--color-white);
+    text-decoration: none;
+  }
+
+  &__link:hover,
+  &__link:active {
+    color: var(--color-lime-green);
+  }
+
+  .copyright {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-end;
+
+    @media only screen and(max-width: $bp-small) {
+      align-items: center;
+      gap: 2.5rem;
+    }
+
+    &__text {
+      color: #aaa;
+    }
+  }
+}

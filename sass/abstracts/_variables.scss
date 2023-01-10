@@ -1,0 +1,24 @@
+// CSS CUSTOM PROPERTIES
+
+:root {
+  // PRIMARY COLORS
+
+  --color-dark-blue: #2d314d;
+  --color-lime-green: #31d35c;
+  --color-bright-cyan: #2bb7da;
+
+  // NEUTRAL COLORS
+
+  --color-grayish-blue: #9698a6;
+  --color-light-grayish-blue: #f3f4f6;
+  --color-very-light-gray: #fafafa;
+  --color-white: #fff;
+}
+
+//BREAKPOINTS
+$bp-largest: 87.5em; // 1400px
+$bp-large: 75em; // 1200px
+$bp-medium: 62.5em; // 1000px
+$bp-small: 50em; // 800px
+$bp-smaller: 41.6875em; // 667px
+$bp-smallest: 31.25em; // 500px
